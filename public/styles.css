@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap');
+
+body {
+    font-family: 'Silkscreen', cursive;
+    background-color: blue;
+}
+
+.titulo {
+    color: white;
+    font-size: 38px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 24px;
+}
+
+
+#selecionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas, .selectatack {
+    display: flex;
+    gap: 10px;
+}
+
+
+.tarjeta-de-mokepon {
+    width: 150px;
+    height: 175px;
+    background: red;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.tarjeta-de-mokepon img {
+    width: 100px;
+    margin-inline-start: 12px;
+    margin-top: -11px;
+
+}
+.seleccionar {
+    height: 50px;
+    
+}
+input {
+    display: none;
+}
+input:checked + label {
+    background-color: rgb(255, 129, 129);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+#boton-fuego {
+    background-color: rgb(247, 206, 26);
+}
+
+#boton-agua {
+    background-color: aqua;
+}
+
+#boton-tierra {
+    background-color: #791e1e;
+}
+.boton-de-ataque {
+    font-family: 'Press Start 2P', cursive;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 36px;
+    border-color: darkblue;
+    width: 100px;
+}
+
+#mensajes {
+    width: 280px;
+    background: lawngreen;
+    padding: 20px;
+    margin-top: 35px;
+    border: solid;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#boton-reinicio {
+    border: none;
+    color: red;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    width: 100px;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 90px;
+    height: 60px;
+    background: red;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+@media (max-width: 800px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+    .selectatack {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    #ver-mapa div {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
